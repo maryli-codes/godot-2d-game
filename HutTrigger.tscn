@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6fktxadbgi3n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_scgmt"]
+size = Vector2(23.7833, 23.4282)
+
+[node name="HutTrigger" type="Area2D"]
+position = Vector2(824, 457)
+scale = Vector2(2.32013, 1.7883)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(17.2404, 26.282)
+scale = Vector2(3.44325, 2.29135)
+shape = SubResource("RectangleShape2D_scgmt")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dpgv715en4o43"
+path="res://.godot/imported/Dark Souls ' You Died ' Sound Effect 4 (mp3cut.net).mp3-481da90d56413f09e51208751d0945bc.mp3str"
+
+[deps]
+
+source_file="res://Dark Souls ' You Died ' Sound Effect 4 (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/Dark Souls ' You Died ' Sound Effect 4 (mp3cut.net).mp3-481da90d56413f09e51208751d0945bc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

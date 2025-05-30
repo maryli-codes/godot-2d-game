@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjxr7yher4puw"
+path="res://.godot/imported/Roblox Angry Sound Effect 4.mp3-bad4465b7e72e71915cf68302dd277b5.mp3str"
+
+[deps]
+
+source_file="res://Roblox Angry Sound Effect 4.mp3"
+dest_files=["res://.godot/imported/Roblox Angry Sound Effect 4.mp3-bad4465b7e72e71915cf68302dd277b5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

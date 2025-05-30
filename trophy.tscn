@@ -1,0 +1,83 @@
+[gd_scene load_steps=13 format=3 uid="uid://xg0t34jvcn8v"]
+
+[ext_resource type="Texture2D" uid="uid://dsbnpje2ru7ly" path="res://Pixel Adventure 1/Free/Items/Checkpoints/End/End (Pressed) (64x64).png" id="1_c560y"]
+[ext_resource type="Script" path="res://Trophy.gd" id="1_xfpav"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_670s6"]
+atlas = ExtResource("1_c560y")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i1lit"]
+atlas = ExtResource("1_c560y")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bapq"]
+atlas = ExtResource("1_c560y")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_obwm1"]
+atlas = ExtResource("1_c560y")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l4yq0"]
+atlas = ExtResource("1_c560y")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8jgk"]
+atlas = ExtResource("1_c560y")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1pyg"]
+atlas = ExtResource("1_c560y")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jn787"]
+atlas = ExtResource("1_c560y")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e4lry"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_670s6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i1lit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bapq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_obwm1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l4yq0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8jgk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1pyg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jn787")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7f1jf"]
+size = Vector2(45, 39)
+
+[node name="Trophy" type="Area2D"]
+position = Vector2(1096, 48)
+script = ExtResource("1_xfpav")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_e4lry")
+frame_progress = 0.828373
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 13.5)
+shape = SubResource("RectangleShape2D_7f1jf")

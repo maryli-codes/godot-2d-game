@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://b6er1ysermcvq"]
+
+[ext_resource type="Texture2D" uid="uid://bnel1hp8c30o6" path="res://Pixel Adventure 1/Free/Main Characters/Mask Dude/image (2).png" id="1_qindj"]
+[ext_resource type="Script" path="res://Score.gd" id="1_tl05e"]
+[ext_resource type="AudioStream" uid="uid://bai0q6064hhp2" path="res://Jungle and Rainforest Sound Effects - Tropical Forest Ambiences from Costa Rica 4.mp3" id="2_rj4mu"]
+[ext_resource type="Texture2D" uid="uid://isluijipi7xa" path="res://Pixel Adventure 1/Free/Main Characters/Mask Dude/Back.png" id="3_574v0"]
+[ext_resource type="FontFile" uid="uid://dgeshtyyx7tcu" path="res://Tribeca.ttf" id="4_cem0d"]
+
+[node name="Score" type="Node2D"]
+script = ExtResource("1_tl05e")
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_rj4mu")
+autoplay = true
+parameters/looping = false
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 16.0
+offset_top = -92.0
+offset_right = 716.0
+offset_bottom = 608.0
+scale = Vector2(1.6555, 1.10661)
+texture = ExtResource("1_qindj")
+
+[node name="ScoreLabel" type="Label" parent="."]
+texture_filter = 1
+offset_left = 181.0
+offset_top = 226.0
+offset_right = 221.0
+offset_bottom = 249.0
+scale = Vector2(0.955646, 1.27979)
+theme_override_fonts/font = ExtResource("4_cem0d")
+theme_override_font_sizes/font_size = 50
+text = "Your High Score: 0"
+
+[node name="BackButton" type="Button" parent="."]
+texture_filter = 1
+offset_left = 143.0
+offset_top = 404.0
+offset_right = 151.0
+offset_bottom = 412.0
+scale = Vector2(1.23434, 0.860572)
+icon = ExtResource("3_574v0")
+flat = true

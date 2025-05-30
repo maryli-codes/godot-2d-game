@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://wqnexe3o2cg4"]
+
+[ext_resource type="Script" path="res://Key.gd" id="1_0vcih"]
+[ext_resource type="Texture2D" uid="uid://dal515lfvde4h" path="res://Screenshot_2025-03-01_132405-removebg-preview.png" id="2_3ikap"]
+[ext_resource type="AudioStream" uid="uid://csal63i8smaqa" path="res://Rare Achievement - Minecraft Sound Effect (HD) 4.mp3" id="3_srb3u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ftlj3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3ikap")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dwfkd"]
+
+[node name="Key" type="Area2D"]
+script = ExtResource("1_0vcih")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ftlj3")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(6.86458, 7.2648)
+shape = SubResource("CapsuleShape2D_dwfkd")
+
+[node name="KeySound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_srb3u")

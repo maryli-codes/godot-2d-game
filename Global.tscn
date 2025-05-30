@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx7hbu4k24umr"]
+
+[ext_resource type="Script" path="res://global.gd" id="1_asksn"]
+
+[node name="Global" type="Node"]
+script = ExtResource("1_asksn")
+
+[connection signal="ready" from="." to="." method="_on_score_updated"]

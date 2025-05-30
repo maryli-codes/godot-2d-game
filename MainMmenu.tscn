@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://cp02xnttepavs"]
+
+[ext_resource type="Texture2D" uid="uid://b70w61cts6vrb" path="res://Pixel Adventure 1/Free/Items/pngtree-cartoon-banana-tree-image_16438539.jpg" id="1_fnnob"]
+[ext_resource type="Texture2D" uid="uid://co0hunv4crw83" path="res://Pixel Adventure 1/Free/Items/BanHops.png" id="2_3cuoh"]
+[ext_resource type="Texture2D" uid="uid://q7583s6nygvw" path="res://Pixel Adventure 1/Free/Items/Start.png" id="3_b4sul"]
+[ext_resource type="Texture2D" uid="uid://dwive0g0uj17d" path="res://Pixel Adventure 1/Free/Items/High-Score.png" id="4_fqvnp"]
+[ext_resource type="Texture2D" uid="uid://cntsyfmr0x0lc" path="res://Pixel Adventure 1/Free/Items/Quit.png" id="5_qabsg"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(3.15712, 2.48421)
+texture = ExtResource("1_fnnob")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 88.0
+offset_top = 186.0
+offset_right = 555.0
+offset_bottom = 260.0
+scale = Vector2(2.00329, 2.61642)
+texture = ExtResource("2_3cuoh")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+texture_filter = 1
+offset_left = 406.0
+offset_top = 400.0
+offset_right = 754.0
+offset_bottom = 710.0
+scale = Vector2(1.53651, 0.71531)
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+icon = ExtResource("3_b4sul")
+flat = true
+
+[node name="High Score" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+icon = ExtResource("4_fqvnp")
+flat = true
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+icon = ExtResource("5_qabsg")
+flat = true

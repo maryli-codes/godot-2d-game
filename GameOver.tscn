@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://b6ciusdo1py40"]
+
+[ext_resource type="Script" path="res://GameOver.gd" id="1_qrg40"]
+[ext_resource type="Texture2D" uid="uid://k1gkrqrkitfs" path="res://image (4).png" id="2_m8x5t"]
+[ext_resource type="AudioStream" uid="uid://tx8j076lq0k4" path="res://Kids Booing (Sound Effect) 4.mp3" id="3_fyf6q"]
+[ext_resource type="Texture2D" uid="uid://djg14bkw0u6hc" path="res://Game-Over.png" id="3_l228h"]
+[ext_resource type="Texture2D" uid="uid://d30rytcc7w5ss" path="res://Retry.png" id="4_poblb"]
+[ext_resource type="Texture2D" uid="uid://f13qv8mpb2os" path="res://Main-Menu (1).png" id="5_0ba6q"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_qrg40")
+
+[node name="ColorRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = -57.0
+offset_top = -81.0
+offset_right = 643.0
+offset_bottom = 619.0
+scale = Vector2(1.75935, 1.09369)
+texture = ExtResource("2_m8x5t")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_fyf6q")
+
+[node name="Label" type="Sprite2D" parent="."]
+position = Vector2(574, 214)
+scale = Vector2(1.28703, 1.58412)
+texture = ExtResource("3_l228h")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 307.0
+offset_right = 724.0
+offset_bottom = 513.0
+
+[node name="Retry" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("4_poblb")
+flat = true
+icon_alignment = 1
+
+[node name="MainMenu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("5_0ba6q")
+flat = true
+
+[connection signal="pressed" from="VBoxContainer/Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainMenu" to="." method="_on_menu_pressed"]
